@@ -15,6 +15,7 @@ public class EmployeesController {
     private EmployeesRepository repository;
 
     // GET request: Teammates will use this to fetch all data from your database
+
     @GetMapping
     public List<Employees> getAllEmployees() {
         return repository.findAll();
